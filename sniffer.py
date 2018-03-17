@@ -189,7 +189,7 @@ def db(latitude, longitude, id_syrus, datetime, velocity):
 
     finally:
         #connection.close()
-        print("ok Db")
+        #print("ok Db")
         
     pass
 
