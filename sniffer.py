@@ -2,10 +2,10 @@
 # Diseno electronico 2018-01
 #
 # Grupo 5
-# Jorge Aguilar
-# Karim Dasuki
-# Juan De La Hoz
-# Jorge Lambrano
+# Jorge Aguilar Orozco
+# Karim Dasuki Garcia
+# Juan De La Hoz Fonseca
+# Jorge Lambrano Arroyo
 #
 
 import socket
