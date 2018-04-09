@@ -28,7 +28,7 @@ DATA_TAB_4 = '\t\t\t\t '
 
 #................................................................
 # this depends of our amazon instance
-connection = pymysql.connect(host='designdatabase.cg6tv9ndrugo.us-west-2.rds.amazonaws.com',
+connection = pymysql.connect(host='designdatabase2.cg6tv9ndrugo.us-west-2.rds.amazonaws.com',
                              user='admin',
                              password='admin123456',
                              db='designdatabase',
@@ -189,7 +189,7 @@ def db(latitude, longitude, id_syrus, datetime, velocity):
 
     finally:
         #connection.close()
-        #print("ok Db")
+        print("ok Db")
         
     pass
 
