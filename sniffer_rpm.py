@@ -200,7 +200,7 @@ def db(latitude, longitude, id_syrus, datetime, velocity, rpm):
 
 def get_rpm(info):
     try:
-        rpm = int(info[4:8])
+        rpm = int(info[6:10])
     except ValueError:
         rpm = -1
     return rpm 
