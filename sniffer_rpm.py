@@ -59,12 +59,15 @@ def main():
                 # port 3388
                 if dest_port == 3389:
                     #Se convierten los datos de hexa a string
-                    info = str(data)
-                    print(info)
-                    index_E = info.find('E')
-                    print(index_E)
-                    
+
                     if data:
+                        
+                        info = str(data)
+                        print(info)
+                        index_E = info.find('E')
+                        print(index_E)
+
+                        print(info[index_E:len(info)- 1])
 
                         try:
                             itIs, EventDef, datetime, lat, lon, vel, id_syrus = get_message(info[index_E:len(info)- 1])
