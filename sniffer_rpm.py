@@ -78,8 +78,8 @@ def main():
 
                         if itIs == 1:
                             print(DATA_TAB_3 + "Latitud es "+str(lat)+"  Longitud "+str(lon) )
-                            print(DATA_TAB_3 + "la hora es "+ str(Hour)+":"+str(Minutes)+":"+str(Seconds))
-                            print(DATA_TAB_3 + "La fecha es "+str(Day)+"/"+str(Month)+"/"+str(Year))
+                            #print(DATA_TAB_3 + "la hora es "+ str(Hour)+":"+str(Minutes)+":"+str(Seconds))
+                            #print(DATA_TAB_3 + "La fecha es "+str(Day)+"/"+str(Month)+"/"+str(Year))
                             print(DATA_TAB_3 + "la velocidad es "+str(vel))
 							print(DATA_TAB_3 + "RPM es "+str(rpm) )
                             db(lat, lon, id_syrus, datetime, vel, rpm)
