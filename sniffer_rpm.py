@@ -60,12 +60,13 @@ def main():
                 if dest_port == 3389:
                     #Se convierten los datos de hexa a string
                     info = str(data)
+                    print(info)
                     index_E = info.find('E')
 
                     if data:
 
                         try:
-                            itIs, EventDef, datetime, lat, lon, vel, id_syrus = get_message(info[index_E:len(other_str)- 1])
+                            itIs, EventDef, datetime, lat, lon, vel, id_syrus = get_message(info[index_E:len(info)- 1])
                             rpm = get_rpm(info)
                         except ValueError:
                             continue
@@ -178,7 +179,7 @@ def db(latitude, longitude, id_syrus, datetime, velocity, rpm):
         with connection.cursor() as cursor:
             # Create a new record
             sql = "INSERT INTO `position_data` (`latitude`, `longitude`, `id_syrus`, `datetime`, `velocity`, `rpm`) VALUES ( %s, %s, %s, %s, %s, %s)"
-            cursor.execute(sql, (str(latitude), str(longitude), id_syrus, datetime, str(velocity), , str(rpm)))
+            cursor.execute(sql, (str(latitude), str(longitude), id_syrus, datetime, str(velocity), str(rpm)))
 
         # connection is not autocommit by default. So you must commit to save
         # your changes.
