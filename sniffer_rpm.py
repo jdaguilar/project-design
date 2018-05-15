@@ -70,7 +70,7 @@ def main():
                         print(info[index_E:len(info)- 1])
 
                         try:
-                            itIs, EventDef, datetime, lat, lon, vel, id_syrus = get_message(info[index_E:len(info)- 1])
+                            itIs, EventDef, datetime, lat, lon, vel, id_syrus = get_message(info[index_E - 2:len(info)- 1])
                             rpm = get_rpm(info)
                         except ValueError:
                             continue
@@ -116,7 +116,7 @@ def upd_segment(data):
 #.................................................................
 
 def get_message(m):
-    if m[0:2] == "EV":
+    if m[2:4] == "EV":
         #print("Mensaje recibido: " + m )
         #print("Procesando...")
         # Confirmation
