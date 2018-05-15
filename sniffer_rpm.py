@@ -62,7 +62,8 @@ def main():
                     info = str(data)
                     print(info)
                     index_E = info.find('E')
-
+                    print(index_E)
+                    
                     if data:
 
                         try:
